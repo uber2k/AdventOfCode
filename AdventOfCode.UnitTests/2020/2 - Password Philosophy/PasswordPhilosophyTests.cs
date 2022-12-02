@@ -16,6 +16,7 @@ namespace AdventOfCode.UnitTests._2020
 
             var sut = new PasswordPhilosophy();
             var result = sut.GetNumberOfValidPasswords(input);
+            Assert.AreEqual(2, result);
 
             //same input with extra empty spaces
             input = new List<string>() {
@@ -24,7 +25,6 @@ namespace AdventOfCode.UnitTests._2020
                 "2-9  c  :  ccccccccc      "
             };
             result = sut.GetNumberOfValidPasswords(input);
-
             Assert.AreEqual(2, result);
         }
 
